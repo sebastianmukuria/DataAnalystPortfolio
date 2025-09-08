@@ -4,54 +4,54 @@ This project explores global tech layoffs using SQL for data cleaning and explor
 
 The goal is to demonstrate data analyst skills in:
 
-Data cleaning & transformation
+- Data cleaning & transformation
 
-Handling duplicates, nulls, and inconsistent values
+- Handling duplicates, nulls, and inconsistent values
 
-Standardizing fields (dates, percentages, country names)
+- Standardizing fields (dates, percentages, country names)
 
-Exploratory analysis of layoffs across companies, industries, countries, and time
+- Exploratory analysis of layoffs across companies, industries, countries, and time
 
 🛠️ Tech Stack
 
-PostgreSQL (SQL queries and analysis)
+- PostgreSQL (SQL queries and analysis)
 
-PgAdmin 4 (query execution and inspection)
+- PgAdmin 4 (query execution and inspection)
 
 📂 Project Workflow
 1. Data Cleaning
 
-Removed duplicates using ROW_NUMBER() and CTEs
+- Removed duplicates using ROW_NUMBER() and CTEs
 
-Standardized fields (e.g., merging "UAE" and "United Arab Emirates")
+- Standardized fields (e.g., merging "UAE" and "United Arab Emirates")
 
-Converted percentage values from text with % symbols into numeric decimals
+- Converted percentage values from text with % symbols into numeric decimals
 
-Handled null/blank values in key fields
+- Handled null/blank values in key fields
 
-Deleted rows missing both total_laid_off and percentage_laid_off
+- Deleted rows missing both total_laid_off and percentage_laid_off
 
 2. Exploratory Data Analysis (EDA)
 
-Identified companies with 100% layoffs (shutdowns)
+- Identified companies with 100% layoffs (shutdowns)
 
-Ranked companies with the highest layoffs overall
+- Ranked companies with the highest layoffs overall
 
-Aggregated layoffs by industry, country, funding stage, and year/month
+- Aggregated layoffs by industry, country, funding stage, and year/month
 
-Created rolling totals to show layoff trends over time
+- Created rolling totals to show layoff trends over time
 
-Ranked top 5 companies with the most layoffs per year using DENSE_RANK()
+- Ranked top 5 companies with the most layoffs per year using DENSE_RANK()
 
 📈 Key Insights
 
-Certain industries (e.g., consumer internet, fintech) saw the largest layoffs.
+- Certain industries (e.g., consumer internet, fintech) saw the largest layoffs.
 
-Layoffs peaked in specific years/months, aligning with global market shifts.
+- Layoffs peaked in specific years/months, aligning with global market shifts.
 
-Several companies completely shut down operations (100% layoffs).
+- Several companies completely shut down operations (100% layoffs).
 
-High-growth companies with significant funding were not immune to layoffs.
+- High-growth companies with significant funding were not immune to layoffs.
 
 📜 Example Queries
 
