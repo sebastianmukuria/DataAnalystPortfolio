@@ -12,6 +12,10 @@ The goal is to demonstrate data analyst skills in:
 
 - Exploratory analysis of layoffs across companies, industries, countries, and time
 
+## 📂 Dataset
+
+This project uses this [Tech Layoffs dataset from Kaggle]([url](https://www.kaggle.com/datasets/swaptr/layoffs-2022)), containing data from 2019 to Sep. 2025 (credit to the original contributors).
+
 ## 🛠️ Tech Stack
 
 - PostgreSQL (SQL queries and analysis)
