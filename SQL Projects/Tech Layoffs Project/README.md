@@ -14,7 +14,7 @@ The goal is to demonstrate data analyst skills in:
 
 ## 📂 Dataset
 
-This project uses this [Tech Layoffs dataset from Kaggle]([url](https://www.kaggle.com/datasets/swaptr/layoffs-2022)), containing data from 2019 to Sep. 2025 (credit to the original contributors).
+This project uses this [Tech Layoffs dataset](https://www.kaggle.com/datasets/swaptr/layoffs-2022), containing data from 2019 to Sep. 2025 (credit to the original contributors).
 
 ## 🛠️ Tech Stack
 
