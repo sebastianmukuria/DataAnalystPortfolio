@@ -1,4 +1,4 @@
-📊 Tech Layoffs Data Analysis (SQL Project)
+# 📊 Tech Layoffs Data Analysis (SQL Project)
 
 This project explores global tech layoffs using SQL for data cleaning and exploratory data analysis (EDA). The dataset contains company-level layoff records, including fields like company, industry, country, date, total laid off, and percentage laid off.
 
@@ -12,13 +12,13 @@ The goal is to demonstrate data analyst skills in:
 
 - Exploratory analysis of layoffs across companies, industries, countries, and time
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 - PostgreSQL (SQL queries and analysis)
 
 - PgAdmin 4 (query execution and inspection)
 
-📂 Project Workflow
+## 📂 Project Workflow
 1. Data Cleaning
 
 - Removed duplicates using ROW_NUMBER() and CTEs
@@ -43,7 +43,7 @@ The goal is to demonstrate data analyst skills in:
 
 - Ranked top 5 companies with the most layoffs per year using DENSE_RANK()
 
-📈 Key Insights
+## 📈 Key Insights
 
 - Certain industries (e.g., consumer internet, fintech) saw the largest layoffs.
 
@@ -53,18 +53,29 @@ The goal is to demonstrate data analyst skills in:
 
 - High-growth companies with significant funding were not immune to layoffs.
 
-📜 Example Queries
-
-Industry with the most layoffs:
-
-SELECT industry, SUM(total_laid_off) AS Total_Laid_Off
-FROM layoffs_staging
-GROUP BY industry
-ORDER BY 2 DESC;
-
+## 📜 Example Queries
+Top 5 companies with the most layoffs per year:
+```sql
+WITH company_year AS (
+  SELECT company,
+         DATE_PART('year', date) AS Year,
+         SUM(total_laid_off) AS total_off
+  FROM layoffs_staging
+  GROUP BY company, DATE_PART('year', date)
+),
+company_year_rank AS (
+  SELECT *,
+         DENSE_RANK() OVER (PARTITION BY Year ORDER BY total_off DESC) AS Ranking
+  FROM company_year
+  WHERE total_off IS NOT NULL
+)
+SELECT *
+FROM company_year_rank
+WHERE Ranking <= 5;
+```
 
 Rolling total layoffs by month/year:
-
+```sql
 WITH Rolling_Total AS (
   SELECT DATE_PART('year', date) AS Year,
          DATE_PART('month', date) AS Month,
@@ -77,3 +88,4 @@ SELECT Year, Month,
        SUM(total_off) OVER(ORDER BY Year, Month) AS Rolling_total,
        total_off
 FROM Rolling_total;
+```
