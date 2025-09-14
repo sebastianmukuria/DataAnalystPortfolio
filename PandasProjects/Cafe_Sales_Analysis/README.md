@@ -25,7 +25,7 @@ Key business insights:
 ## 📈 Dashboard
 A snapshot of the business at a glance:
 
-![Cafe Sales Dashboard](images/cafe_sales_dashboard.png)
+[Cafe Sales Dashboard](PandasProjects/Cafe_Sales_Analysis/images/cafe_sales_dashboard.png)
 
 ---
 
