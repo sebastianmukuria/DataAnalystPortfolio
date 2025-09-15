@@ -3,7 +3,7 @@
 ## 👋 About Me  
 Hi, I’m Sebastian! I’ve worked as a **research analyst in the crypto industry**, where I built automation tools, wrote SQL queries, and led projects to improve data workflows in addition to blockchain research focusing on layer-1 and layer-2 networks. I also have experience as a **business data analyst in the defense sector** and co-founded a recycling startup focused on sustainability.  
 
-I earned my **B.S. in Mechanical Engineering (UC Riverside)** and I’m now pursuing an **A.A. in Data Science (Norco College, 2026)**.  
+I earned my **B.S. in Mechanical Engineering (UC Riverside)** and I’m now pursuing an **A.A. in Data Science.
 
 ## 🎯 Current Focus  
 - Leveling up in **Python** and **SQL**  
