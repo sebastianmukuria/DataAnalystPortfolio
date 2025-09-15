@@ -12,7 +12,8 @@ I earned my **B.S. in Mechanical Engineering (UC Riverside)** and I’m now purs
 
 ## 🚀 Projects  
 - 🐍 **[Python Automation Bot](https://github.com/sebastianmukuria/ReleaseSummarizerBot)** – Built Slack + LLM integration to summarize events and reduce manual workload.  
-- 💾 **[SQL Tech Layoffs Analysis](https://github.com/sebastianmukuria/DataAnalystPortfolio/tree/main/SQL%20Projects/Tech%20Layoffs%20Project)** – Queried and explored layoff datasets to uncover industry trends.  
+- 💾 **[SQL Tech Layoffs Analysis](https://github.com/sebastianmukuria/DataAnalystPortfolio/tree/main/SQL%20Projects/Tech%20Layoffs%20Project)** – Queried and explored layoff datasets to uncover industry trends.
+- ☕️ **[Cafe Sales Analysis](https://github.com/sebastianmukuria/DataAnalystPortfolio/tree/main/PandasProjects/Cafe_Sales_Analysis)** - Data cleaning and EDA exercise on a messy cafe sales dataset. 
 
 ## 🌱 Goal  
 This repo tracks my progress as I grow my skills, one project at a time. Long term, I’m aiming for **machine learning engineering**—but every dataset and script along the way gets me closer.  
