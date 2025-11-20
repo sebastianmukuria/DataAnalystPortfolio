@@ -9,7 +9,7 @@ I earned my **B.S. in Mechanical Engineering (UC Riverside)** and I’m now purs
 - Leveling up in **Python** and **SQL**  
 - Building dashboards and visualizations
 - Refreshing mathematics for Machine Learning and Data Science.
-- Documenting my journey from analyst → data scientist → future ML engineer
+- Documenting my journey from analyst → data scientist → future data engineer
 
 ## 🚀 Projects  
 - 🐍 **[Python Automation Bot](https://github.com/sebastianmukuria/ReleaseSummarizerBot)** – Built Slack + LLM integration to summarize events and reduce manual workload.  
