@@ -15,6 +15,22 @@ I earned my **B.S. in Mechanical Engineering (UC Riverside)** and I’m now purs
 
 ## 🚀 Projects
 
+### ⚙️ Analytics Engineering
+
+#### ☕ [Coffee Shop dbt + Snowflake Pipeline](https://github.com/sebastianmukuria/dbt-snowflake-pipeline)
+> **End-to-End Data Pipeline — dbt · Snowflake · CI**
+
+[![dbt build](https://github.com/sebastianmukuria/dbt-snowflake-pipeline/actions/workflows/dbt.yml/badge.svg)](https://github.com/sebastianmukuria/dbt-snowflake-pipeline/actions/workflows/dbt.yml)
+
+A production-style analytics pipeline: raw operational data is loaded into **Snowflake**, transformed with **dbt** into a clean, tested star schema, and continuously validated by **GitHub Actions CI** on every push.
+
+- **Stack:** Snowflake, dbt (dbt-snowflake), SQL, Python, Git, GitHub Actions
+- **Modeling:** layered `sources → staging → marts`; star schema (`fct_orders` fact + `dim_customers` dimension), surrogate keys, a reusable revenue macro
+- **Quality:** 20 dbt data tests (`unique`, `not_null`, `relationships`, `accepted_values`, custom singular) gating every build
+- **Engineering:** key-pair (RSA) auth, CI runs `dbt build` against Snowflake on each commit, reproducible Python seed generator
+
+---
+
 ### 🔬 Advanced Projects
 
 #### 📈 [Crypto Market Cycle Analysis](./crypto_market_analysis/)
@@ -71,12 +87,13 @@ Slack + LLM integration to auto-summarise crypto protocol release notes, reducin
 | Category | Tools |
 |----------|-------|
 | **Languages** | Python, SQL |
+| **Analytics Engineering** | dbt, Snowflake, dbt tests, dimensional modeling |
 | **Data** | pandas, NumPy, yfinance, BeautifulSoup |
 | **ML** | scikit-learn, XGBoost, SHAP, imbalanced-learn |
 | **NLP** | VADER, FinBERT (HuggingFace transformers) |
 | **Visualisation** | Plotly, Matplotlib, seaborn |
-| **Storage** | Parquet, SQLite |
-| **Dev** | Git, Jupyter, VS Code |
+| **Storage** | Snowflake, Parquet, SQLite |
+| **Dev** | Git, GitHub Actions (CI), Jupyter, VS Code |
 
 ## 🌱 Goal
 This repo tracks my progression from analyst to data scientist. Long-term target: **machine learning engineering** — building production ML systems, not just notebooks.
