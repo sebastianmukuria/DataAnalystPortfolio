@@ -25,11 +25,14 @@ A.A. in Data Science.
 [![dbt build](https://github.com/sebastianmukuria/dbt-snowflake-pipeline/actions/workflows/dbt.yml/badge.svg)](https://github.com/sebastianmukuria/dbt-snowflake-pipeline/actions/workflows/dbt.yml)
 
 A small dbt + Snowflake pipeline I built to learn analytics engineering. Raw coffee-shop
-data gets loaded into Snowflake, and dbt transforms it into a tested star schema you
-could build dashboards on. GitHub Actions runs the build and all the tests on every push.
+data gets loaded into Snowflake, and dbt transforms it into a tested star schema, which
+feeds a dashboard built with Evidence.dev. GitHub Actions runs the build and all the
+tests on every push.
 
-Snowflake · dbt · SQL · Python · GitHub Actions
-→ [github.com/sebastianmukuria/dbt-snowflake-pipeline](https://github.com/sebastianmukuria/dbt-snowflake-pipeline)
+Snowflake · dbt · SQL · Python · Evidence.dev · GitHub Actions
+
+- **Live dashboard:** [sebastianmukuria.github.io/dbt-snowflake-pipeline](https://sebastianmukuria.github.io/dbt-snowflake-pipeline/)
+- **Code:** [github.com/sebastianmukuria/dbt-snowflake-pipeline](https://github.com/sebastianmukuria/dbt-snowflake-pipeline)
 
 ### Cafe Sales Analysis
 [→ folder](./PandasProjects/Cafe_Sales_Analysis/)
