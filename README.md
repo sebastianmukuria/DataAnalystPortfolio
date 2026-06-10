@@ -17,17 +17,13 @@ I earned my **B.S. in Mechanical Engineering (UC Riverside)** and I’m now purs
 
 ### ⚙️ Analytics Engineering
 
-#### ☕ [Coffee Shop dbt + Snowflake Pipeline](https://github.com/sebastianmukuria/dbt-snowflake-pipeline)
-> **End-to-End Data Pipeline — dbt · Snowflake · CI**
+#### [Coffee Shop dbt + Snowflake Pipeline](https://github.com/sebastianmukuria/dbt-snowflake-pipeline)
 
 [![dbt build](https://github.com/sebastianmukuria/dbt-snowflake-pipeline/actions/workflows/dbt.yml/badge.svg)](https://github.com/sebastianmukuria/dbt-snowflake-pipeline/actions/workflows/dbt.yml)
 
-A production-style analytics pipeline: raw operational data is loaded into **Snowflake**, transformed with **dbt** into a clean, tested star schema, and continuously validated by **GitHub Actions CI** on every push.
+A small dbt + Snowflake pipeline I built to learn analytics engineering. Raw coffee-shop data gets loaded into Snowflake, and dbt transforms it into a tested star schema you could build dashboards on. GitHub Actions runs the build and all the tests on every push.
 
-- **Stack:** Snowflake, dbt (dbt-snowflake), SQL, Python, Git, GitHub Actions
-- **Modeling:** layered `sources → staging → marts`; star schema (`fct_orders` fact + `dim_customers` dimension), surrogate keys, a reusable revenue macro
-- **Quality:** 20 dbt data tests (`unique`, `not_null`, `relationships`, `accepted_values`, custom singular) gating every build
-- **Engineering:** key-pair (RSA) auth, CI runs `dbt build` against Snowflake on each commit, reproducible Python seed generator
+Stack: Snowflake, dbt, SQL, Python, GitHub Actions
 
 ---
 
